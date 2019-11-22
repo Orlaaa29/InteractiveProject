@@ -1,3 +1,4 @@
+// Reference from https://processing.org/examples/button.html
 PImage opening;//title sequence
 PImage start;//start button
 PImage manual;//instuction page
@@ -11,6 +12,9 @@ int startHeight=244;
 int instructionX=1214, instructionY=277; 
 int instructionWidth=205;
 int instructionHeight=247;
+import processing.sound.*;
+SoundFile file;
+
 void setup(){
   size (1710,1222);
   opening= loadImage("opening.png");
@@ -18,6 +22,9 @@ void setup(){
   //instruction=loadImage("instruction.jpg");
  
   background(opening);
+  
+  file = new SoundFile(this, "Jason-Farnham-Payday.mp3");
+   file.play();
 }
 
 void draw (){
