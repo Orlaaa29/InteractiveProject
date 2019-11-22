@@ -24,12 +24,13 @@ void setup(){
   background(opening);
   
   file = new SoundFile(this, "Jason-Farnham-Payday.mp3");
-   file.play();
+  file.play();
+  file.loop();
 }
 
 void draw (){
   update(mouseX,mouseY);
- println(mouseX);
+ //println(mouseX);
   //image(start,271,277);
   //image(instruction,1214,277);
 }
