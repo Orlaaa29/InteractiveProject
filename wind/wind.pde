@@ -8,7 +8,7 @@ size(640,360);
   }
 for (int i = 0; i < leaves.length; i++) {
     int index=int(random(0,leafs.length));
-    leaves[i] = new Leaf(leafs[index],200+i*200,500,random(30,150));
+    leaves[i] = new Leaf(leafs[index],75+i*75,125,random(30,150));
     leaves[i].display();
   }
 }
@@ -46,7 +46,10 @@ class Leaf{
    }
 
   void display() {
+    pushMatrix();
     image(leafs,x,y,diameter,diameter);
+      translate(x, y);
+      popMatrix();
 
     }
 }
