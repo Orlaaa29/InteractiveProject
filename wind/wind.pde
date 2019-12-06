@@ -8,7 +8,7 @@ size(640,360);
   }
 for (int i = 0; i < leaves.length; i++) {
     int index=int(random(0,leafs.length));
-    leaves[i] = new Leaf(leafs[index],75+i*75,125,random(30,150));
+    leaves[i] = new Leaf(leafs[index],75+i*100,125,random(30,150));
     leaves[i].display();
   }
 }
