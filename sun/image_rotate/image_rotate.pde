@@ -11,7 +11,7 @@ void setup(){
 void draw(){
 translate(x, x);
 rotate(radians(r));
-imageMode(CENTER);
+imageMode(CORNER);
 image(sun,-25,25);
 r+=0.5;
 }
