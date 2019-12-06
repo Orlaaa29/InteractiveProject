@@ -3,8 +3,8 @@ float x,y,r;
 void setup(){
   size(800,800);
  sun=loadImage("sun.png");
- x=400;
- y=400;
+ x=0;
+ y=0;
  r=0;
 }
 
